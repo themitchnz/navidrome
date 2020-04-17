@@ -9,5 +9,4 @@ USER gitpod
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
-RUN sudo apt-get update -q && sudo apt-get install -qy \
-+ ffmpeg
+RUN sudo add-apt-repository ppa:mc3man/trusty-media && sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get install ffmpeg
